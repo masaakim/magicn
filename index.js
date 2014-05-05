@@ -5,6 +5,8 @@ module.exports = function(css) {
   var ast = parse(css);
   ast = ast.stylesheet;
 
+  var ret = false;
+
   matchedProp = [
     'top',
     'bottom',
@@ -24,18 +26,21 @@ module.exports = function(css) {
     'width'
   ];
 
-  ast.rules.forEach(function visit(rule)) {
+  ast.rules.forEach(function visit(rule) {
     if (rule.rules) rule.rules.forEach(visit);
 
     if (!rule.selectors) return;
 
     rule.declarations.forEach(function(declaration) {
       matchedProp.forEach(function(prop) {
-        if (declaration === prop) {
-          
+        if (declaration.property === prop) {
+          var num = unit.rm(declaration.value);
+          if (num % 10) ret = true;
         }
       });
     });
-  }
+  });
+
+  return ret;
 
 };
