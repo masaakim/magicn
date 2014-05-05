@@ -1,0 +1,23 @@
+{
+  "name": "magicn",
+  "version": "0.0.0",
+  "description": "Check whether using magic number in CSS code",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/morishitter/magicn.git"
+  },
+  "keywords": [
+    "css",
+    "analize"
+  ],
+  "author": "Masaaki Morishita",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morishitter/magicn/issues"
+  },
+  "homepage": "https://github.com/morishitter/magicn"
+}
