@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/morishitter/magicn/issues"
   },
-  "homepage": "https://github.com/morishitter/magicn"
+  "homepage": "https://github.com/morishitter/magicn",
+  "devDependencies": {
+    "tap": "^0.4.9",
+    "tape": "^2.12.3"
+  },
+  "dependencies": {
+    "css-parse": "^1.7.0",
+    "css-unit": "0.0.1"
+  }
 }

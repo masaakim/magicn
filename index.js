@@ -1,8 +1,9 @@
 
 module.exports = function(css) {
   var parse = require('css-parse');
+  var unit = require('css-unit');
   var ast = parse(css);
-  ast = ast.obj.stylesheet;
+  ast = ast.stylesheet;
 
   matchedProp = [
     'top',
@@ -36,6 +37,5 @@ module.exports = function(css) {
       });
     });
   }
-
 
 };
