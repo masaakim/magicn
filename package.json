@@ -1,6 +1,6 @@
 {
   "name": "magicn",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Check whether using magic number in CSS code",
   "main": "index.js",
   "scripts": {
