@@ -21,7 +21,7 @@ magicn(css); // true
 or in command line
 
 ```
-magicn your-css-file.css
+$ magicn your-css-file.css
 ```
 
 ## License
