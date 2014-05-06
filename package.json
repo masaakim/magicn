@@ -20,6 +20,9 @@
     "url": "https://github.com/morishitter/magicn/issues"
   },
   "homepage": "https://github.com/morishitter/magicn",
+  "bin": {
+    "magicn": "bin/cli.js"
+  },
   "devDependencies": {
     "tap": "^0.4.9",
     "tape": "^2.12.3"
