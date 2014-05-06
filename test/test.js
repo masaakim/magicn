@@ -1,5 +1,5 @@
 
-var magicn = require('./');
+var magicn = require('../');
 var test = require('tape');
 
 test('return true', function(t) {
