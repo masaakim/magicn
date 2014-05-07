@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "css-parse": "^1.7.0",
-    "css-unit": "0.0.1",
+    "css-unit": "0.0.2",
     "commander": "^2.2.0",
     "stdin": "0.0.1"
   }
