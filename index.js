@@ -1,7 +1,6 @@
 
 module.exports = function(css) {
   var parse = require('css-parse');
-  var rework = require('rework')
   var unit = require('css-unit');
 
   var ast = parse(css, {position: true});
