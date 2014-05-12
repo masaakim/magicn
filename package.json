@@ -4,7 +4,7 @@
   "description": "Check whether using magic number in CSS code",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/test.js"
+    "test": "colored-tape test/test.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "tap": "^0.4.9",
-    "tape": "^2.12.3"
+    "colored-tape": "^1.0.1"
   },
   "dependencies": {
     "css-parse": "^1.7.0",
