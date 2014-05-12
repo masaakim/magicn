@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var pkg = require('../package.json');
+var stdin = require('stdin');
+var fs = require('fs');
+var magicn = require('../');
+
+var read = function (name) {
+  return fs.readFileSync(name);
+}
+
+program.version(pkg.version).parse(process.argv)
+
+var css = read(process.argv[2]).toString();
+
+var magicNumPos = magicn(css);
+
+if (magicNumPos) {
+  console.log("Using magic number in this file.");
+  console.log("This is here:");
+  console.log("");
+  console.log(magicNumPos);
+} else {
+  console.log("Not using magic number in this file.");
+  console.log("Cool!!");
+}
