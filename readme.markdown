@@ -11,14 +11,21 @@ npm install magicn
 ## Example
 
 ```javascript
-var magicn = require('./');
+var magicn = require('magicn');
 
 var css = ".site-nav > li:hover .dropdown{position:absolute;top:37px;left:0;}";
 
-magicn(css); // true
+magicn(css);
+/*
+ * [
+ *  { start: { line: 1, column: 1 },
+ *    end: { line: 3, column: 2 },
+ *    source: undefined }
+ * ]
+ */
 ```
 
-or in command line
+or in command line:
 
 ```
 $ magicn your-css-file.css
